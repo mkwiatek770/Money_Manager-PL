@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #ddd;
+    min-height: 100vh;
+}
+
+header {
+    height: 20vh;
+    background-color: #222;
+    color: white;
+}
+
+span {
+    line-height: 20vh;
+    font-family: arial;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+
+/* expenses.html */
+div.left {
+    float: left;
+    width: 30%;
+    min-height: 20vh;
+    padding-top: 3vh;
+}
+
+div.right {
+    float: left;
+    width: 70%;
+    min-height: 20vh;
+    line-height: 20vh;
+}
+
+div.left h3 {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10%;
+}
+
+div.left p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    margin-left: 10%;
+}
+
+/* expenses.html */
+
+h2 {
+    margin: 30px auto 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    font-size: 40px;
+}
+
+form.single {
+    width: 70%;
+    margin: 0px auto;
+    height: 50vh;
+    background-color: #666;
+    padding: 20px;
+    color: white;
+}
+
+form.single p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+    margin-left: 10%;
+    color: white;
+    position: relative;
+
+}
+
+
+
+
+button {
+    background-color: #222;
+    color: #eee;
+    border-radius: 0;
+    display: block;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin: 20px 0;
+
+}
+
+button:hover {
+    background-color: #444;
+    color: white;
+}
+
+.single button {
+    margin: 80px auto;
+}
+
+.single input {
+    display: block;
+    float: left;
+    width: 50%;
+    position: relative;
+    border-radius: 0;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.single input:last-of-type {
+    width: 20%;
+}
+
+.single p.pre {
+    float: left;
+    width: 30%;
+}
+
+
+.single input.unique {
+    display: inline-block;
+    width: 100px;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+form.start {
+    height: 15vh;
+}

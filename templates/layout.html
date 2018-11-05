@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if title %}
+    <title>Zarządzanie portfelem - {{ title }}</title>
+    {% else%}
+    <title>Zarządzanie portfelem</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+    <header>
+        <p><span>{{name}} {{surname}}</span> <span>Saldo: {{ balance }} PLN</span></p>
+
+    </header>
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Wydatek</h2>
+<form action="" method="post" class="single">
+    <p>Kategoria: {{ match[0] }}</p>
+    <p>Opis: {{ match[2] }}</p>
+    <p>Cena: {{ match[3] }} ZŁ</p>
+    <button name="btn" value="{{match[4]}}">Usuń wydatek</button>
+</form>
+{% endblock content %}

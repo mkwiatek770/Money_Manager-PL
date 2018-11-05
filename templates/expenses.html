@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Twoje wydatki</h1>
+<form action="" method="post">
+    <button class="report" name="btn" value="xls">Pobierz raport XLS</button>
+</form>
+<form action="" method="post">
+    <button class="report" name="btn" value="pdf">Pobierz raport PDF</button>
+</form>
+
+<hr>
+{% for payment in payments%}
+<div class="left">
+    <h3>Wydatek {{ loop.index }}</h3>
+    <p>Kategoria {{ payment[0] }}</p>
+    <p>Opis: {{ payment[2] }}</p>
+    <p>Kwota {{ payment[3] }}PLN</p>
+</div>
+<div class="right">
+    <form action="" method="post">
+        <button type="submit" name="btn" value="{{ payment[4] }}">Usuń wydatek</button>
+    </form>
+
+</div>
+<div style="clear:both;"></div>
+<hr>
+
+{% endfor %}
+{% endblock content %}

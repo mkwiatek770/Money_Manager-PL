@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+<div>
+    <form class="start" action="" method="POST">
+        <button type="submit" name="btn" value="all_expenses">Twoje wydatki</button>
+    </form>
+    <form class="start" action="" method="POST">
+        <input type="text" placeholder="np. pizza" name="exp_txt">
+        <button type="submit" name="btn" value="singe_exp">Szukaj</button>
+    </form>
+</div>
+<div>
+    <form class="start" action="" method="POST">
+        <button type="submit" name="btn" value="add_expense">Dodaj wydatek</button>
+    </form>
+</div>
+<div>
+    <form class="start" action="" method="POST">
+        <button type="submit" name="btn" value="add_money">Dodaj pieniądze</button>
+    </form>
+</div>
+
+{% endblock content %}
