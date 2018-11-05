@@ -175,17 +175,8 @@ COPY public.categories (cat_id, name) FROM stdin;
 --
 
 COPY public.expenses (expense_id, user_id, cat_id, description, price) FROM stdin;
-5	1	4	Kosuzulka nike	80.00
-6	1	4	Kosuzulka nike	80.00
-7	1	4	Kosuzulka nike	80.00
-8	1	3	Klub nocny 	60.00
-9	1	3	Klub nocny 	60.00
-10	1	3	Klub nocny 	60.00
-11	1	3	Klub nocny 	60.00
-13	1	3	Klub nocny 	60.00
-14	1	3	Klub nocny 	60.00
-17	1	2	gaz	122.00
-18	1	4	calvin klein	100.00
+19	1	1	Restauracja z żoną 	100.00
+20	1	4	Garnitur nike :)	200.00
 \.
 
 
@@ -195,7 +186,7 @@ COPY public.expenses (expense_id, user_id, cat_id, description, price) FROM stdi
 
 COPY public.users (id, name, surname, balance) FROM stdin;
 2	Ala	Pyza	840.00
-1	Michał	Kwiatek	334.00
+1	Michał	Kwiatek	247.00
 \.
 
 
@@ -210,7 +201,7 @@ SELECT pg_catalog.setval('public.categories_cat_id_seq', 4, true);
 -- Name: expenses_expense_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.expenses_expense_id_seq', 18, true);
+SELECT pg_catalog.setval('public.expenses_expense_id_seq', 20, true);
 
 
 --
