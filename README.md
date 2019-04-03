@@ -1,31 +1,28 @@
-# Money_Manager-PL-
-Currently only in polish language / Obecnie tylko w jezyku poslkim
+# expenses-manager
 
-## O czym jest aplikacja ? 
-Aplikacja jest menedżerem wydatków i finansów: 
-* możemy kontrolować stan naszego konnta 
-* sprawdzać historię naszych wydatków
-* dodawać / usuwać wydatki
-* generować raporty pdf naszych wydatków 
-* generować raporty XLS naszych wydatków 
-* szukać konkretnych wydatków po nazwie w wyszukiwarce
+App to manage your money in easy way. 
 
-## Instalacja
-* zklonuj repozytorium na GitHubie 
-* zainstaluj psql jeśli nie masz apt-get install psql 
-* zrób backup bazy danych wchodząc w katalog database i wpisując: psql -U postgres -f active.sql -h localhost active_db
-* stwórz wirtualne środowisko virtualenv -p python3 venv
-* zainstaluj wymagane paczki: pip install -r requirements.txt
-* Wejdź do katalogu gdzie znajduje się plik run.py i wpisz python3 run.py 
-* w przeglądarce wpisz adres: http://localhost:5000/
+## Technology Stack:
+* Python
+* Flask
+* PostgreSQL
 
-## Kontrybuowanie 
-Pull requesty są mile widziane :)
+## What you can do ?
+* Put credit on your account
+* Add expense (Ammount of money, description, category)
+* Remove expense
+* Display list of expenses
+* Generate XLX report of all expenses `xlsxwriter` library
+* Generate PDF report of all expenses using `reportlab` library
+* Search for specific expense
+* Check our balance
 
-## Author 
-* Michał Kwiatek 
-* kontakt: michalkwiatek8@o2.pl
+## Installation
+1. Clone repository
+2. Restore database (psql needed) `psql -U postgres -f active.sql -h localhost active_db`
+3. Create virtual environment `virtualenv -p python3 venv`
+4. Activate virtualenv `source venv/bin/activate`
+5. `python3 manage.py run.py`
 
-## Licencja 
-[MIT](https://choosealicense.com/licenses/mit/)
+Done :)
 
