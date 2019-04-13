@@ -19,7 +19,7 @@ App to manage your money in easy way.
 
 ## Installation
 1. Clone repository
-2. Restore database (psql needed) `psql -U postgres -f active.sql -h localhost active_db`
+2. Restore database (psql needed) `psql -U postgres -f database/sync_dump.sql -h localhost active_db`
 3. Create virtual environment `virtualenv -p python3 venv`
 4. Activate virtualenv `source venv/bin/activate`
 5. `python3 manage.py run.py`
